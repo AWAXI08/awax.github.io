@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arena Clash</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>ARENA CLASH</h1>
+        <p>Le combat commence !</p>
+    </header>
+
+    <main>
+  
+<!-- Choix du mode de jeu -->
+<section class="game-modes">
+
+    <h2>Choisir un mode de jeu</h2>
+
+    <select id="gameMode">
+        <option value="pvp">
+            Joueur contre Joueur
+        </option>
+
+        <option value="pve">
+            Joueur contre Ordinateur
+        </option>
+
+        <option value="eve">
+            Ordinateur contre Ordinateur
+        </option>
+    </select>
+
+    <button id="startMode">
+        Lancer le combat
+    </button>
+
+</section>
+      
+<section class="score">
+
+    <!-- JOUEUR 1 -->
+    <div class="player-info">
+        <h2>Shadow - Joueur 1</h2>
+
+        <p>
+            Vie : <span id="health1">100</span> PV
+        </p>
+
+        <div class="health-bar">
+            <div id="bar1" class="health-fill"></div>
+        </div>
+    </div>
+
+    <!-- JOUEUR 2 -->
+    <div class="player-info">
+        <h2>Blaze - Joueur 2</h2>
+
+        <p>
+            Vie : <span id="health2">100</span> PV
+        </p>
+
+        <div class="health-bar">
+            <div id="bar2" class="health-fill"></div>
+        </div>
+    </div>
+
+</section>
+
+
+        <section id="arena">
+
+            
+<div id="fighter1" class="fighter">
+    <img src="assets/fighter1/idle_1.png" alt="Shadow">
+</div>
+
+
+  <div id="fighter2" class="fighter">
+    <img src="assets/fighter2/idle_1.png" alt="Blaze">
+</div>
+
+
+        </section>
+
+        <section class="controls">
+
+            <h2>Commandes</h2>
+
+            <p>Joueur 1 : Q / D pour bouger, Z pour sauter, F pour attaquer.</p>
+
+            <p>Joueur 2 : Flèches gauche / droite, flèche haut pour sauter, Entrée pour attaquer.</p>
+
+        </section>
+
+        <p id="message">En attente du début du combat...</p>
+
+        <button id="restart">Recommencer</button>
+
+    </main>
+
+</body>
+
+</html>
